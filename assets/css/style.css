@@ -29,6 +29,17 @@ nav .logo{
     font-weight: 700;
     letter-spacing: 1px;
 }
+.logo {
+  
+    font-weight: bold;
+    
+  }
+  
+  .logo img {
+  
+    width: 70px;
+    height: auto;
+  }
 span{
     color: red;
 }
@@ -62,6 +73,15 @@ span{
 }
 section{
     padding: 160px 10% 100px;
+}
+.picture img {
+    width: 500px;
+    height: auto;
+  }
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .home-text{
     line-height: 1.5;
@@ -115,3 +135,59 @@ section{
 .student h1 {
     font-size: 35px;
 }
+
+/* PR SECTION */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68vh;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+    margin-top: -200px;
+    
+    
+  }
+  
+  .box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 10px;
+    background-color: rgb(250, 246, 246);
+    border-radius: 6px;
+    border: 1px solid #000000; /* Change the border size and color */
+  }
+  
+  .box:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    border-color: #675b5b; /* Change border color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+    cursor: pointer;
+    transition: .5s;
+    
+  }
+  
+  .box select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .picture img {
+    width: 500px;
+    height: auto;
+  }
