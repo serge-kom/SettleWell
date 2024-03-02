@@ -1,0 +1,117 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Google Sans Regular";
+}
+nav{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    padding:0 5%;
+    transition: all .45s ease;
+}
+nav .logo{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: red;
+}
+.hamburger{
+    display: none;
+}
+.nav-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.oct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list li a{
+    display: block;
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+section{
+    padding: 160px 10% 100px;
+}
+.home-text{
+    line-height: 1.5;
+    color: #000000;
+}
+.home-text h1{
+    font-size: 45px;
+}
+.home-text h2{
+    font-size: 40px;
+}
+.home-btns{
+    display: flex;
+    align-items: center;
+}
+.home-btns li{
+    display: block;
+    border: 1px solid red ;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.login{
+    display: flex;
+    align-items:center ;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+.login h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.login p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.login-links li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    font-size: 20px;
+    border: 1px solid #000000 ;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.student h1 {
+    font-size: 35px;
+}
