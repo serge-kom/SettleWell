@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <a href="#"
+          ><img src="../pictures/Logo.jpg" alt="Your Image"
+        /></a>
+      </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-home">
+      <ul class="nav-list">
+        <li><a href="../../index.html" class="active">Home</a></li>
+        <li><a href="student.html">Student</a></li>
+        <li><a href="pr.html">Permanent Resident</a></li>
+        <li><a href="wp.html">Work Permit</a></li>
+        <li><a href="refugee.html">Refugee</a></li>
+      </ul>
+    </div>
+    <div class="oct">
+      <li>
+        <a href="login.html">Login / Register</a>
+      </li>
+    </div>
+  </nav>
+
+  <section>
+    <div class="check-container">
+        <div class="checklist" >
+            <div class="checkbox-group">
+                <p>PR Checklist</p>
+                <label>
+                    <input type="checkbox" id="option1" onchange="toggleCheckbox('option1')">
+                    <span>Get SIN(SERVICE CANADA)</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option2" onchange="toggleCheckbox('option2')">
+                    <span>Open Bnak Account</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option3" onchange="toggleCheckbox('option3')">
+                    <span>Get Health Card</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option4" onchange="toggleCheckbox('option4')">
+                    <span>Find a job</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option5" onchange="toggleCheckbox('option5')">
+                    <span>Get accomodation</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option6" onchange="toggleCheckbox('option6')">
+                    <span>Find Family Doctor</span>
+                </label>
+                <p>+ Enter tasks, ideas, notes,...</p>
+                <div class="addList">
+                    <div class="to-do">To-do</div>
+                    <div class="save">Save</div>
+                </div>
+
+            </div>
+            <div class="checkbox-group">
+                <p>Student Checklist</p>
+                <label>
+                    <input type="checkbox" id="option1" onchange="toggleCheckbox('option1')">
+                    <span>Get SIN(SERVICE CANADA)</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option2" onchange="toggleCheckbox('option2')">
+                    <span>Get SIN(SERVICE CANADA)</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option3" onchange="toggleCheckbox('option3')">
+                    <span>Open Bnak Account</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option4" onchange="toggleCheckbox('option4')">
+                    <span>Complete UHIP registration at School</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option5" onchange="toggleCheckbox('option5')">
+                    <span>Get accomodation</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="option6" onchange="toggleCheckbox('option6')">
+                    <span>Find a Part-Time Job</span>
+                </label>
+                <p>+ Enter tasks, ideas, notes,...</p>
+                <div class="addList">
+                    <div class="to-do">To-do</div>
+                    <div class="save">Save</div>
+                </div>
+            </div>
+        </div>
+        <div class="saved">
+            <div class="boxdropdown">
+                <select id="dropdown-saved" class="province-dropdown">
+                <option value="alberta">saved</option>
+                </select>
+            </div>
+            <div class="boxdropdown">
+                <select id="dropdown-saved" class="province-dropdown">
+                <option value="alberta">saved</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function toggleCheckbox(optionId) {
+            var checkbox = document.getElementById(optionId);
+            // Perform any desired actions based on the checkbox state here
+            console.log(optionId + ' is now ' + (checkbox.checked ? 'checked' : 'unchecked'));
+        }
+    </script>
+  </section>
+  <button id="myButton"><a href="../../index.html">Homepage</a></button>
+</body>
+</html>
+</body>
+</html>

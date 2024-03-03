@@ -9,7 +9,9 @@
 <body>
   <nav>
     <div class="logo">
-      <a href="#"><span>settle</span>WELL</a>
+      <a href="#"
+        ><img src="../pictures/Logo.jpg" alt="Your Image"
+      /></a>
     </div>
     <div class="hamburger">
       <div class="line"></div>
@@ -35,23 +37,49 @@
   <section>
     <div class="content">
       <div class="boxes">
-        <div class="box">
-          <a href="#">Province</a>
+        <!-- Add a dropdown for provinces -->
+        <div class="boxdropdown">
+          <select id="dropdown" class="province-dropdown">
+            <option value="alberta">province</option>
+            <option value="alberta">Alberta</option>
+            <option value="british-columbia">British Columbia</option>
+            <option value="manitoba">Manitoba</option>
+            <option value="new-brunswick">New Brunswick</option>
+            <option value="newfoundland-and-labrador">Newfoundland and Labrador</option>
+            <option value="nova-scotia">Nova Scotia</option>
+            <option value="ontario">Ontario</option>
+            <option value="prince-edward-island">Prince Edward Island</option>
+            <option value="quebec">Quebec</option>
+            <option value="saskatchewan">Saskatchewan</option>
+            <option value="northwest-territories">Northwest Territories</option>
+            <option value="nunavut">Nunavut</option>
+            <option value="yukon">Yukon</option>
+          </select>
         </div>
-        <div class="box">
-          <a href="#">Landing Aiport</a>
-        
+
+
+        <div class="box-dropdown">
+          <select id="dropdown" class="landing-airport-dropdown">
+            <option value="landing-airport">Landing Airport</option>
+            <option value="yul">Montreal-Pierre Elliott Trudeau International Airport (YUL)</option>
+            <option value="yyz">Toronto Pearson International Airport (YYZ)</option>
+            <option value="yvr">Vancouver International Airport (YVR)</option>
+          </select>
         </div>
-        <div class="box">
-          <a href="#">Airport Immigration Services</a>        
-                   
-          
+
+        <div class="box-dropdown">
+          <select id="dropdown" class="landing-airport-dropdown">
+            <option value="AIS">Airport Immigration Services</option>
+            <option value="service canada">service canada</option>
+          </select>
         </div>
       </div>
       <div class="picture">
         <img src="../pictures/Page3.png" alt="Your Image">
       </div>
     </div>
+
+    <button id="myButton"><a href="pr2.html">Next Step</a></button>
   </section>
 
 </body>
