@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"
+              ><img src="../pictures/Logo.jpg" alt="Your Image"
+            /></a>
+          </div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-home">
+          <ul class="nav-list">
+            <li><a href="../../index.html" class="active">Home</a></li>
+            <li><a href="student.html">Student</a></li>
+            <li><a href="pr.html">Permanent Resident</a></li>
+            <li><a href="wp.html">Work Permit</a></li>
+            <li><a href="refugee.html">Refugee</a></li>
+          </ul>
+        </div>
+        <div class="oct">
+          <li>
+            <a href="login.html">Login / Register</a>
+          </li>
+        </div>
+      </nav>
+
+      <section>
+        <div class="profile">
+            <div class="profile-image-container" >
+              <img src="" class="profile-image" alt="">
+              <p>Hello, John</p>
+            </div>
+            <div class="profile-text">
+              <p>Fill in Personal Information</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Student Information Form</h2>
+            <form id="studentForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="statusInCanada">Status in Canada:</label>
+                <select id="statusInCanada" name="statusInCanada" onchange="toggleOptions()" required>
+                    <option value="citizen">Citizen</option>
+                    <option value="permanentResident">Permanent Resident</option>
+                    <option value="student">Student</option>
+                    <option value="workVisa">Work Visa</option>
+                    <!-- Add more options as needed -->
+                </select>
+    
+                <div id="schoolOptions" style="display: none;">
+                    <label for="schoolName">Name of School:</label>
+                    <input type="text" id="schoolName" name="schoolName" required>
+    
+                    <label for="expectedGraduation">Expected Graduation:</label>
+                    <input type="date" id="expectedGraduation" name="expectedGraduation" required>
+                </div>
+    
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    
+        <script>
+            function toggleOptions() {
+                const statusInCanada = document.getElementById('statusInCanada').value;
+                const schoolOptions = document.getElementById('schoolOptions');
+    
+                if (statusInCanada === 'student') {
+                    schoolOptions.style.display = 'block';
+                } else {
+                    schoolOptions.style.display = 'none';
+                }
+            }
+    
+            function submitForm() {
+                const firstName = document.getElementById('firstName').value;
+                const lastName = document.getElementById('lastName').value;
+                const statusInCanada = document.getElementById('statusInCanada').value;
+                const schoolName = document.getElementById('schoolName').value;
+                const expectedGraduation = document.getElementById('expectedGraduation').value;
+    
+                // You can perform additional validation or send the form data to a server here
+                console.log('Form Submitted:');
+                console.log('First Name:', firstName);
+                console.log('Last Name:', lastName);
+                console.log('Status in Canada:', statusInCanada);
+    
+                if (statusInCanada === 'student') {
+                    console.log('Name of School:', schoolName);
+                    console.log('Expected Graduation:', expectedGraduation);
+                }
+            }
+        </script>
+      </section>
+</body>
+</html>
